@@ -64,7 +64,7 @@ router.get("/:id", (req, res, next) => {
       return console.error(err);
     } else {
       res.render("books/details", {
-        title: "Edit Books",
+        title: "Edit Book",
         books: booksObject
       });
     }

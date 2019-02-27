@@ -14,7 +14,7 @@
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
-                  <th>Title</th>
+                  <th class="text-center">Title</th>
                    <th class="text-center">Description</th>
                   <th class="text-center">Price</th>
                   <th class="text-center">Author</th>
@@ -27,7 +27,8 @@
                 <!-- Template Row -->
                 <% for (let count = 0; count < books.length; count++) { %>
                 <tr>
-                  <td><%= books[count].Title %></td>
+                  <td class="text-center"><%= books[count].Title %></td>
+                   <td class="text-center"><%= books[count].Description %></td>
                   <td class="text-center">$<%= books[count].Price %></td>
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
@@ -36,9 +37,10 @@
                     <!-- ------------------------ -->
                     <!-- ADDED the EDIT BUTTON HERE -->
                     <!-- ------------------------ -->
-                     <a href="/books/edit/<%= books[count].id %>" class="btn btn-primary">
+                     <a href="/books/<%= books[count].id %>" class="btn btn-primary">
                       <i class="fas fa-pencil-alt"></i> Edit
                   </a>
+                  
                   </td>
 
                   <td class="text-center">
