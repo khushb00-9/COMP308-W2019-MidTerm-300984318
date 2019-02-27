@@ -1,3 +1,10 @@
+/*
+    File Name - db.js
+    Author - Khushboo Sakervala
+    Student ID - 300984318
+    Web App Name - Midterm Favorite books
+*/
+
 module.exports = {
   //local MongoDB deployment ->
   //URI: "mongodb://localhost/books308"
